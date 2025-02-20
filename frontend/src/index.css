@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+body{
+  overflow-x: hidden;
+}
+
+@theme {
+    /* Colors */
+    --color-primary: #3276FA;  /* Dark green */
+    --color-primary-light: #3276FA;
+    --color-primary-dark: #3276FA;
+
+    --color-secondary: #F7F7F7;  /* Light gray */
+    --color-secondary-light: #F7F7F7;
+    --color-secondary-dark: #F7F7F7;
+
+    /* Font sizes */
+    --font-size-header: 68.51px;
+    --line-height-header: 3rem;
+    --font-size-subheader: 24.47px;
+    --line-height-subheader: 2.25rem;
+  }
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+  }
+}
